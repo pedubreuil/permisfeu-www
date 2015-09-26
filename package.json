@@ -1,0 +1,21 @@
+{
+  "name": "permisfeu-www",
+  "version": "1.0.0",
+  "devDependencies": {
+    "bower": "*",
+    "grunt": "*",
+    "grunt-bower": "*",
+    "grunt-bower-concat": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-local-googlefont": "*",
+    "grunt-processhtml": "*",
+    "grunt-uncss": "*",
+    "grunt-wiredep": "*"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "permisfeu-www",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "*",
+    "bootstrapvalidator": "*",
+    "components-font-awesome": "*",
+    "jquery": "*",
+    "jquery.easing": "*",
+    "jquery.cookie": "*",
+    "awesome-bootstrap-checkbox": ""
+  },
+  "devDependencies": {},
+  "appPath": "app",
+  "moduleName": "permisFeuWww"
+}
