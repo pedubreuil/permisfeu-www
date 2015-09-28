@@ -6,6 +6,7 @@
     <meta name="description" content="L'application mobile pour le permis de feu" />
     <title>L'application mobile pour le permis de feu</title>
     <link rel="canonical" href="http://permisdefeu.fr" />
+    <link rel="alternate" href="http://permisdefeu.fr/" hreflang="fr-fr" />
 
     <!-- build:include _commonhtmlhead.html -->
     <!-- /build -->
@@ -33,6 +34,7 @@
     <script src="bower_components/bootstrapvalidator/dist/js/bootstrapValidator.js"></script>
     <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="bower_components/blazy/blazy.js"></script>
     <!-- endbower -->
 <!--    <script src="js/jquery.cookiecuttr.js"></script>-->
     <script src="js/moventes.js"></script>
@@ -88,7 +90,7 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="header b-lazy" data-src="img/bg/header-lg.jpg" data-src-small="img/bg/header-xs.jpg"  data-src-medium="img/bg/header-md.jpg">
 
         <div class="text-vertical-center">
             <h1 class="brand">Permis de feu</h1>
@@ -99,7 +101,7 @@
     </header>
 
 
-    <section id="app" class="parallax">
+    <section id="app" class="parallax b-lazy" data-src="img/bg/app-lg.jpg" data-src-medium="img/bg/app-md.jpg"  data-src-small="img/bg/app-xs.jpg"  >
         <div class="container">
             <div class="row text-center ">
                 <div class="col-lg-12">
@@ -156,7 +158,7 @@
                                 </tr>
                                 <tr>
                                     <th>Aide à la rédaction du permis</th>
-                                    <td>pré-remplissage <abbr title="" data-toggle="tooltip" data-placement="bottom" data-original-title="grâce au type de travaux sélectionné et à l'historique des permis">automatique</abbr></td>
+                                    <td>pré-remplissage <abbr title="" data-toggle="tooltip" data-placement="bottom" data-original-title="grâce au type de travaux sélectionné et aux permis précédents">automatique</abbr></td>
                                     <td>instructions génériques</td>
                                 </tr>
                                 <tr>
@@ -287,7 +289,7 @@
             </div>
         </div>
     </section>
-    <section id="enjeux" class="parallax">
+    <section id="enjeux" class="parallax b-lazy" data-src="img/bg/enjeux-lg.jpg" data-src-medium="img/bg/enjeux-md.jpg"  data-src-small="img/bg/enjeux-xs.jpg" >
         <div class="container text-vertical-center">
             <div class="row text-center ">
                 <div class="col-lg-12">

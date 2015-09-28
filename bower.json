@@ -8,7 +8,8 @@
     "jquery": "*",
     "jquery.easing": "*",
     "jquery.cookie": "*",
-    "awesome-bootstrap-checkbox": ""
+    "awesome-bootstrap-checkbox": "*",
+    "blazy":"*"
   },
   "devDependencies": {},
   "appPath": "app",

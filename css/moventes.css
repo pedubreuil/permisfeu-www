@@ -4,28 +4,31 @@
 * For details, see http://www.apache.org/licenses/LICENSE-2.0.
 */
 
-/* Global Styles */
 
+/* Global Styles */
 
 html,
 body {
     width: 100%;
     height: 100%;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color:black;
-    color:lightgray
-
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: lightgray
 }
+
 
 /* Nav bar */
+
 .brand {
-/*    font-family: 'Source Sans Pro', sans-serif;*/
+    /*    font-family: 'Source Sans Pro', sans-serif;*/
     font-family: 'Open Sans', sans-serif;
 }
+
 .brand.label-success {
-    font-weight:normal;
+    font-weight: normal;
 }
-a:hover .brand{
+
+a:hover .brand {
     text-decoration: none;
 }
 
@@ -35,33 +38,34 @@ a:hover .brand{
     white-space: nowrap;
     /*    padding: 7px;*/
 }
+
 .navbar-brand img {
-    max-height:100%;
-    width:auto;
-    display:inline-block;
+    max-height: 100%;
+    width: auto;
+    display: inline-block;
 }
 
 @media(min-width:767px) {
     .navbar {
         padding-top: 0;
-        -webkit-transition: all .5s ease-out;   /* Rapide sur le début et décèlere sur la fin */
-        -moz-transition: all .5s ease-out ;
-        transition: all .5s ease-out ;
+        -webkit-transition: all .5s ease-out;
+        /* Rapide sur le début et décèlere sur la fin */
+        -moz-transition: all .5s ease-out;
+        transition: all .5s ease-out;
     }
-
     .nav-over-header {
-        padding-top : 10px;
-        background-color:transparent;
-        border-color:transparent;
+        padding-top: 10px;
+        background-color: transparent;
+        border-color: transparent;
         font-size: 125%;
         font-weight: bolder;
     }
     .nav-over-header img {
-        max-height:150%;
-        transition: all .5s ease-out ;
+        max-height: 150%;
+        transition: all .5s ease-out;
     }
     .nav-over-header .navbar-nav>li>a {
-        color:whitesmoke;
+        color: whitesmoke;
     }
 }
 
@@ -69,10 +73,10 @@ a:hover .brand{
     font-weight: bolder;
 }
 
-
 .panel-heading h4 {
-    display:inline;
+    display: inline;
 }
+
 
 /* Center utils */
 
@@ -90,50 +94,49 @@ a:hover .brand{
 }
 
 
-
-
 /* Header */
+
 header {
     width: 100%;
     height: 100%;
     text-align: center;
     display: table;
     position: relative;
-
     background-attachment: scroll;
     background-position: center center;
     background-repeat: none;
-    background-attachment:scroll;
+    background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-
-
 .breadcrumb {
     margin-top: 60px;
     background-color: transparent;
-
 }
 
 
 /* Section */
+
 section {
     padding: 40px 0;
 }
+
 @media(min-width:768px) {
     section {
         padding: 60px 0;
     }
 }
+
 .section-title {
     text-align: center;
 }
 
 
 /* Body background */
+
 body.fixed-bg {
     background-repeat: no-repeat;
     background-position: center;
@@ -141,42 +144,44 @@ body.fixed-bg {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color:black;
+    background-color: black;
     background-attachment: fixed;
-    background-clip:border-box;
+    background-clip: border-box;
 }
+
 section.parallax {
-    
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    /*  background: url(../images/estate.jpg) no-repeat center center fixed; */
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-/*  background: url(../images/estate.jpg) no-repeat center center fixed; */
-  display: table;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.panel,
+.list-group {
+    opacity: 0.8;
+    color: #1a1a1a
 }
-.panel, .list-group {
-  opacity: 0.8;
-  color:#1a1a1a
-}
-.bg-black{
-  opacity: 0.6;
+
+.bg-black {
+    opacity: 0.6;
 }
 
 .panel-heading {
     font-weight: bolder
 }
 
-
 .table thead th {
     text-align: center
 }
+
 .table tbody th {
     text-align: right
 }
@@ -185,62 +190,21 @@ section.parallax {
     text-align: center
 }
 
+/*
 
-
-
-
-
-
-
-
-@media only screen and (max-width: 767px) {
-    /* xs */
-
-    section#app {
-        background-image: url(../img/bg/app-xs.jpg);
-    }
-
-    section#enjeux {
-        background-image: url(../img/bg/enjeux-xs.jpg);
-    }
-    header {
-        background-image: url(../img/bg/header-xs.jpg);
-    }
+.b-lazy {
+    -webkit-transition: opacity 500ms ease-in-out;
+    -moz-transition: opacity 500ms ease-in-out;
+    -o-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
+    max-width: 100%;
+    opacity: 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    /* md */
-    section#app {
-        background-image: url(../img/bg/app-md.jpg);
-    }
-    section#enjeux {
-        background-image: url(../img/bg/enjeux-md.jpg);
-    }
-    header {
-        background-image: url(../img/bg/header-md.jpg);
-    }
-
+.b-lazy.b-loaded {
+    opacity: 1;
 }
-
-
-@media only screen and (min-width: 1200px) {
-    /* lg */
-
-    /* to 2500px-1100px */
-    section#app {
-        background-image: url(../img/bg/app-lg.jpg);
-    }
-    section#enjeux {
-        background-image: url(../img/bg/enjeux-lg.jpg);
-    }
-    header {
-        background-image: url(../img/bg/header-lg.jpg);
-    }
-
-
-}
-
-
+*/
 
 
 /* FOOTER */
@@ -255,12 +219,13 @@ footer {
     margin-right: 0;
     margin-left: 0;
     text-align: center;
-    font-size:90%;
+    font-size: 90%;
 }
 
 footer ul {
-    margin:0;
+    margin: 0;
 }
+
 
 /* Custom Horizontal Rule */
 
@@ -269,32 +234,23 @@ hr.small {
 }
 
 
-
-
-
-
-
 /* Custom Button "dark" */
 
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-
-
-
 .bg-black {
-    background-color: #000000 !important;    
+    background-color: #000000 !important;
 }
 
 .bg-white {
