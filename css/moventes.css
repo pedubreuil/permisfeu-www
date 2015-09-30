@@ -13,9 +13,8 @@ body {
     height: 100%;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: black;
-    color: lightgray
+    color:white
 }
-
 
 /* Nav bar */
 
@@ -154,10 +153,10 @@ section.parallax {
     background-position: center;
     background-attachment: fixed;
     /*  background: url(../images/estate.jpg) no-repeat center center fixed; */
-    display: table;
-    height: 800px;
+/*    display: table;*/
+/*    height: 800px;*/
     position: relative;
-    width: 100%;
+/*    width: 100%;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -189,6 +188,12 @@ section.parallax {
 .table tbody td {
     text-align: center
 }
+
+
+.table-responsive td,.table-responsive tr th {
+    word-wrap:break-word;
+}
+
 
 /*
 
